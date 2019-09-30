@@ -1,14 +1,21 @@
 #include <fstream>
 
 int main() {
-    int input;
-    int a = 1;
-    scanf("%d", &input);
+    int f, a = 1, b = 1, c;
 
-    for (int i = 1; i <= input; ++i) {
-        a = a * i ;
+    scanf("%d", &f);
+
+    if (f <= 0) {
+        printf("zjebałeś");
+        return -1;
     }
 
-    printf("%d\n", a);
+    for (int i = 0; i < f; ++i) {
+        c = a + b;
+        printf("%d ", a);
+        a = b;
+        b = c;
+    }
+    
     return 0;
 }
