@@ -1,11 +1,14 @@
 #include <fstream>
 
 int main() {
+    int input;
     int a = 1;
-    for (int i = 2; i < 100; i = i + 1) {
-        printf("%d " ,a);
-        a = a * i;
+    scanf("%d", &input);
+
+    for (int i = 1; i <= input; ++i) {
+        a = a * i ;
     }
 
+    printf("%d\n", a);
     return 0;
 }
